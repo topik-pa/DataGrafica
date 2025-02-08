@@ -1,6 +1,0 @@
-if breadcrumbs
-  section(id="breadcrumbs") Sei in: 
-    nav
-      a(href="/", title="Home") Home
-        each elem in breadcrumbs
-          a(href=elem.url, title=__(elem.name)) !{__(elem.name)}
