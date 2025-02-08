@@ -5,9 +5,11 @@
   --gray: #585858;
   --white: #EEEEEE;
   --blue: #5180df;
-  --red: #dd2e2e;
+  --red:  #CD212A;
+  --der: #21CDC4;
+  --green:#008C45;
+  --neerg: #8C0047;
   --orange: #ca6303;
-  --green: #3b6936;
 
   --html: #ef5931;
   --css: #00649e; /*#9e3a00*/
@@ -17,8 +19,8 @@
   --coding: #999999;
   --sec: #96d1f3;
 
-  --topic: var(--js);
-  --cipot: #33a6f5;
+  --topic: var(--green);
+  --cipot: var(--neerg);
 
   --footer: #255877;
   --footer-height: 2.4rem;
@@ -28,8 +30,8 @@
   --large: 1rem;
   --x-large: 2rem;
 
-  --font-size-bigger: 2.4rem;
-  --font-size-big: 1.4rem;
+  --font-size-bigger: 3.4rem;
+  --font-size-big: 2.4rem;
   --font-size-small: .75rem;
 
   --border-radius-small: .3rem;
@@ -103,6 +105,9 @@ h1 {
   margin: 0;
   text-shadow: 0 2px var(--white);
 }
+h2 {
+  font-size: var(--font-size-big);
+}
 
 small {
   display: block;
@@ -170,8 +175,8 @@ main img {
   border: 5px solid var(--cipot);
   padding: .4rem;
   border-radius: .4rem;
-  width: 640px;
-  height: 640px;
+  width: 930px;
+  height: auto;
 }
 main #img {
   position: absolute;
@@ -209,8 +214,8 @@ header {
 header img {
   width: 2.2rem;
   margin-right: 0.6rem;
-  border-radius: 50%;
-  border: 1px solid var(--black);
+  width: 75%;
+  height: auto;
 }
 header span {
   font-size: 1.4rem;
@@ -234,5 +239,5 @@ footer span {
   transform: rotate(28deg);
   background: var(--gray);
   border: 4px solid var(--topic);
-  transform: rotate(30deg) translate(-22%, 7%);
+  transform: rotate(20deg) translate(-23%, 6%);
 }
