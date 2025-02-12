@@ -141,12 +141,16 @@ main {
   font-family: "Source Code Pro", monospace;
   text-shadow: 1px 1px var(--black);
   background: rgb(88,88,88);
-  background: linear-gradient(177deg, rgba(88,88,88,1) 2%, rgba(221,221,221,1) 18%, rgba(255,255,255,0) 60%);
+  background: linear-gradient(177deg, rgba(150,150,150,1) 2%, rgba(221,221,221,1) 18%, rgba(255,255,255,0) 60%);
 }
 main h1 {
   text-shadow: 1px 1px var(--black);
   letter-spacing: 7px;
   margin-bottom: var(--medium);
+}
+h1 span {
+  display: block;
+  margin-top: var(--large);
 }
 main h2 {
   font-weight: 400;
@@ -172,8 +176,8 @@ main .right {
 }
 main img {
   position: relative;
-  border: 5px solid var(--cipot);
-  padding: .4rem;
+  border: 5px solid var(--topic);
+  padding: 1rem;
   border-radius: .4rem;
   width: 930px;
   height: auto;
@@ -184,7 +188,7 @@ main #img {
   left: -15px;
   width: 100%;
   height: 100%;
-  border: 7px solid var(--topic);
+  border: none;
   border-radius: .4rem;
   transform: rotate( -8deg);
   pointer-events: none;
@@ -225,19 +229,19 @@ header span {
 
 footer {
   height: 14vh;
+  text-align: center;
 }
 footer img {
   z-index: 999;
   position: relative;
-  height: 8rem;
-  margin: 0.5rem 1rem;
-  bottom: .7rem;
+  height: 7rem;
+  bottom: 2.7rem;
 }
 footer span {
   display: block;
   height: 70vh;
   transform: rotate(28deg);
   background: var(--gray);
-  border: 4px solid var(--topic);
+  border: 20px solid var(--topic);
   transform: rotate(20deg) translate(-23%, 6%);
 }
