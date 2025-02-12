@@ -1,0 +1,247 @@
+@import 'icons.css';
+
+:root {
+  --black: #171717;
+  --gray: #585858;
+  --white: #EEEEEE;
+  --blue: #5180df;
+  --red:  #CD212A;
+  --der: #21CDC4;
+  --green:#008C45;
+  --neerg: #8C0047;
+  --orange: #ca6303;
+
+  --html: #ef5931;
+  --css: #00649e; /*#9e3a00*/
+  --js: #f58233; /*33a6f5*/
+  --eng: #f9bc10;
+  --node: #026e00;
+  --coding: #999999;
+  --sec: #96d1f3;
+
+  --topic: var(--js);
+  --cipot: var(--neerg);
+
+  --footer: #255877;
+  --footer-height: 2.4rem;
+
+  --small: .3rem;
+  --medium: .7rem;
+  --large: 1rem;
+  --x-large: 2rem;
+
+  --font-size-bigger: 3.4rem;
+  --font-size-big: 2.4rem;
+  --font-size-small: .75rem;
+
+  --border-radius-small: .3rem;
+
+  --first-color: var(--blue);
+  --second-color: var(--orange);
+
+  --doc-width: 1080px;
+  --doc-height: 1350px;
+
+  --css-property: #6f87c9;
+  --css-value: #d85858;
+}
+
+.code {
+  font-family: monospace;
+  margin: var(--large) 0;
+
+  color: var(--white);
+  background-color: var(--black);
+  width: 60%;
+  border-radius: var(--border-radius-small);
+  padding: var(--medium);
+  border-left: 2px solid var(--gray);
+  border-top: 2px solid var(--gray);
+
+  span.css-property {
+    color: var(--css-property);
+  }
+  span.css-value {
+    color: var(--css-value);
+  }
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--black);
+  width: 100%;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+  position: relative;
+}
+body {
+  height: var(--doc-height);
+  width: var(--doc-width);
+  overflow-y: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: transparent;
+
+  /* background: rgb(88,88,88);
+  background: linear-gradient(177deg, rgba(88,88,88,1) 12%, rgba(255,255,255,1) 25%) */
+  
+}
+
+
+h1 {
+  font-size: var(--font-size-bigger);
+  line-height: 100%;
+  margin: 0;
+  text-shadow: 0 2px var(--white);
+}
+h2 {
+  font-size: var(--font-size-big);
+}
+
+small {
+  display: block;
+  font-size: var(--font-size-small);
+  font-weight: normal;
+}
+
+em {
+  font-weight: bold;
+  text-decoration: var(--cipot) underline;
+}
+
+li {
+  list-style-type: none;
+  margin: var(--large) 0;
+}
+
+a {
+  color: inherit;
+}
+
+
+
+/*MAIN*/
+main {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  font-family: "Source Code Pro", monospace;
+  text-shadow: 1px 1px var(--black);
+  background: rgb(88,88,88);
+  background: linear-gradient(177deg, rgba(150,150,150,1) 2%, rgba(221,221,221,1) 18%, rgba(255,255,255,0) 60%);
+}
+main h1 {
+  text-shadow: 1px 1px var(--black);
+  letter-spacing: 7px;
+  margin-bottom: var(--medium);
+}
+h1 span {
+  display: block;
+  margin-top: var(--large);
+}
+main h2 {
+  font-weight: 400;
+  color: var(--black);
+  text-shadow: 1px 1px var(--white);
+}
+main h2 span {
+  font-weight: bold;
+}
+main h1 span {
+  color: var(--topic);
+  text-transform: uppercase;
+}
+main .left {
+  margin-top: -5rem;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+main .right {
+  position: relative;
+  margin-top: .7rem;
+  margin-right: 0.4rem;
+}
+main img {
+  position: relative;
+  border: 5px solid var(--topic);
+  padding: 1rem;
+  border-radius: .4rem;
+  width: 930px;
+  height: auto;
+}
+main #img {
+  position: absolute;
+  top: -30px;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: .4rem;
+  transform: rotate( -8deg);
+  pointer-events: none;
+}
+
+main a {
+  background: red;
+  display: inline-block;
+  padding: 0.2rem 1.2rem;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px var(--black);
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  background-color: transparent;
+  color: var(--black);
+  font-weight: 500;
+  text-shadow: 1px 1px var(--white);
+  border-bottom: 1px solid #777
+
+}
+header img {
+  width: 2.2rem;
+  margin-right: 0.6rem;
+  width: 75%;
+  height: auto;
+}
+header span {
+  font-size: 1.4rem;
+  letter-spacing: 5px;
+}
+
+
+footer {
+  height: 14vh;
+  text-align: center;
+}
+footer img {
+  z-index: 999;
+  position: relative;
+  height: 7rem;
+  bottom: 2.7rem;
+}
+footer span {
+  display: block;
+  height: 70vh;
+  transform: rotate(28deg);
+  background: var(--gray);
+  border: 20px solid var(--topic);
+  transform: rotate(20deg) translate(-23%, 22%);
+}
