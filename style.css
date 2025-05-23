@@ -137,17 +137,17 @@ main {
   text-shadow: 1px 1px var(--black);
 
   background: rgb(88,88,88);
-  background: linear-gradient(177deg, rgba(255,255,255,0) 40%, rgba(221,221,221,1) 82%, rgba(88,88,88,1) 98%)
+  background: linear-gradient(177deg, rgba(255,255,255,0) 20%, rgba(221,221,221,1) 70%, rgba(88,88,88,1) 90%)
 }
 main h1 {
   text-shadow: 1px 3px var(--black);
   letter-spacing: 7px;
   margin-bottom: var(--medium);
 
-  font-size: 8rem;
+  font-size: 5rem;
   text-transform: uppercase;
 
-  color: #08435f;
+  color: #28274A;
 }
 main h2 {
   font-weight: 400;
@@ -162,10 +162,19 @@ main h1 span {
   text-transform: uppercase;
 }
 main .left {
-  margin-top: -5rem;
+  margin-top: -29rem;
 }
 main .right {
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background: var(--red);
+  background-image: url(./imgs/marisa.jpg);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 50% 28%;
 }
 main img {
   position: absolute;
@@ -223,7 +232,16 @@ header span {
 
 
 footer {
-  height: 14vh;
+  position: absolute;
+  bottom: 22%;
+  display: flex;
+}
+footer div {
+  writing-mode: tb-rl;
+  font-size: .7rem;
+  font-weight: bold;
+  padding: .53rem;
+  border-right: 1px solid var(--gray)
 }
 footer img {
   z-index: 999;
@@ -239,4 +257,17 @@ footer span {
   background: var(--gray);
   border: 4px solid var(--topic);
   transform: rotate(35deg) translate(-15%, 10%);
+}
+
+aside {
+  padding: .7rem;
+  position: absolute;
+  bottom: 27rem;
+  color: var(--gray);
+  font-size: var(--font-size-big);
+  font-weight: 500;
+}
+aside span {
+  font-style: italic;
+  font-weight: 700;
 }
